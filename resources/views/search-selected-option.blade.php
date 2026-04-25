@@ -6,7 +6,8 @@
     x-on:keydown.enter.prevent="removeSelection(@this)"
     x-on:keydown.space.prevent="removeSelection(@this)"
 >
-    <span class="{{ $styles['searchSelectedOptionTitle'] }}">
+    <span class="{{ $styles['searchSelectedOptionTitle'] }}" type="button"
+        wire:click.prevent="selectValue(null)">
         {{ data_get($selectedOption, 'description', 'Override selectedOption() with keyed array (value, description) for meaningful description') }}
     </span>
 
