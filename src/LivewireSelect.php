@@ -57,6 +57,7 @@ class LivewireSelect extends Component
                           $value = null,
                           $placeholder = 'Select an option',
                           $searchable = false,
+                          $addingAddress = true,
                           $dependsOn = [],
                           $dependsOnValues = [],
                           $waitForDependenciesToShow = false,
